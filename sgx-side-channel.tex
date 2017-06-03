@@ -1,0 +1,42 @@
+\documentclass[sigconf]{acmart}
+
+\usepackage{booktabs} % For formal tables
+
+
+% Copyright
+\setcopyright{none}
+%\setcopyright{acmcopyright}
+%\setcopyright{acmlicensed}
+%\setcopyright{rightsretained}
+%\setcopyright{usgov}
+%\setcopyright{usgovmixed}
+%\setcopyright{cagov}
+%\setcopyright{cagovmixed}
+
+\begin{document}
+\title{Software Side-Channel Attacks Against Intel SGX Enclaves}
+\subtitle{CS 658 Research Paper}
+
+
+\author{Colin Howes}
+\affiliation{%
+  \institution{University of Waterloo}
+  \streetaddress{200 University Ave. W}
+  \city{Waterloo} 
+  \state{ON} 
+  \postcode{N2L 3G1}
+}
+\email{chowes@uwaterloo.ca}
+
+\begin{abstract}
+Intel Software Guard Extensions is a hardware extension designed to allow legacy programs to run securely in a cloud environment when all software on the host machine is potentially untrusted. 
+\end{abstract}
+
+\maketitle
+
+\input{sgx-body}
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{sigproc} 
+
+\end{document}
