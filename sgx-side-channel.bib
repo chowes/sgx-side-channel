@@ -1,0 +1,125 @@
+
+@article{costan_intel_2016,
+	title = {Intel {SGX} {Explained}.},
+	volume = {2016},
+	url = {https://pdfs.semanticscholar.org/2d7f/3f4ca3fbb15ae04533456e5031e0d0dc845a.pdf},
+	urldate = {2017-05-30},
+	journal = {IACR Cryptology ePrint Archive},
+	author = {Costan, Victor and Devadas, Srinivas},
+	year = {2016},
+	pages = {86},
+	file = {3f4ca3fbb15ae04533456e5031e0d0dc845a.pdf:/home/colin/.zotero/zotero/f4prs9xk.default/zotero/storage/X8UG4GEP/3f4ca3fbb15ae04533456e5031e0d0dc845a.pdf:application/pdf}
+}
+
+@inproceedings{shih_t-sgx:_2017,
+	title = {T-{SGX}: {Eradicating} {Controlled}-{Channel} {Attacks} {Against} {Enclave} {Programs}},
+	isbn = {978-1-891562-46-4},
+	shorttitle = {T-{SGX}},
+	url = {https://www.internetsociety.org/sites/default/files/ndss2017_07-2_Shih_paper.pdf},
+	doi = {10.14722/ndss.2017.23193},
+	language = {en},
+	urldate = {2017-05-30},
+	publisher = {Internet Society},
+	author = {Shih, Ming-Wei and Lee, Sangho and Kim, Taesoo and Peinado, Marcus},
+	year = {2017},
+	file = {fba7aad263c7d4cf5ce67b1d629935043e7a.pdf:/home/colin/.zotero/zotero/f4prs9xk.default/zotero/storage/FXRCM9M8/fba7aad263c7d4cf5ce67b1d629935043e7a.pdf:application/pdf}
+}
+
+@article{schwarz_malware_2017,
+	title = {Malware {Guard} {Extension}: {Using} {SGX} to {Conceal} {Cache} {Attacks}},
+	shorttitle = {Malware {Guard} {Extension}},
+	url = {http://arxiv.org/abs/1702.08719},
+	abstract = {In modern computer systems, user processes are isolated from each other by the operating system and the hardware. Additionally, in a cloud scenario it is crucial that the hypervisor isolates tenants from other tenants that are co-located on the same physical machine. However, the hypervisor does not protect tenants against the cloud provider and thus the supplied operating system and hardware. Intel SGX provides a mechanism that addresses this scenario. It aims at protecting user-level software from attacks from other processes, the operating system, and even physical attackers. In this paper, we demonstrate fine-grained software-based side-channel attacks from a malicious SGX enclave targeting co-located enclaves. Our attack is the first malware running on real SGX hardware, abusing SGX protection features to conceal itself. Furthermore, we demonstrate our attack both in a native environment and across multiple Docker containers. We perform a Prime+Probe cache side-channel attack on a co-located SGX enclave running an up-to-date RSA implementation that uses a constant-time multiplication primitive. The attack works although in SGX enclaves there are no timers, no large pages, no physical addresses, and no shared memory. In a semi-synchronous attack, we extract 96\% of an RSA private key from a single trace. We extract the full RSA private key in an automated attack from 11 traces within 5 minutes.},
+	journal = {arXiv:1702.08719 [cs]},
+	author = {Schwarz, Michael and Weiser, Samuel and Gruss, Daniel and Maurice, Clémentine and Mangard, Stefan},
+	month = feb,
+	year = {2017},
+	note = {arXiv: 1702.08719},
+	keywords = {Computer Science - Cryptography and Security},
+	file = {arXiv\:1702.08719 PDF:/home/colin/.zotero/zotero/f4prs9xk.default/zotero/storage/Q6Q54JQZ/Schwarz et al. - 2017 - Malware Guard Extension Using SGX to Conceal Cach.pdf:application/pdf;arXiv.org Snapshot:/home/colin/.zotero/zotero/f4prs9xk.default/zotero/storage/UH7IJT3K/1702.html:text/html}
+}
+
+@book{workshop_on_end-to-end_proceedings_2005,
+	address = {Berkeley, CA},
+	title = {Proceedings of the {Workshop} on {End}-to-{End}, {Sense}-and-{Respond} {Systems}, {Applications}, and {Services}: ({EESR} '05), {June} 5, 2005, {Seattle}, {WA}, {USA}},
+	isbn = {978-1-931971-32-4},
+	shorttitle = {Proceedings of the {Workshop} on {End}-to-{End}, {Sense}-and-{Respond} {Systems}, {Applications}, and {Services}},
+	url = {http://portal.acm.org/toc.cfm?id=1072530},
+	language = {English},
+	urldate = {2017-05-30},
+	publisher = {USENIX Association},
+	author = {Workshop on End-to-End, Applications, {and} Services, Sense-and-Respond Systems and {USENIX Association} and {ACM SIGMOBILE} and {ACM Digital Library}},
+	year = {2005},
+	note = {OCLC: 83294375},
+	file = {sec16_paper_costan.pdf:/home/colin/.zotero/zotero/f4prs9xk.default/zotero/storage/TTZNBP5Z/sec16_paper_costan.pdf:application/pdf}
+}
+
+@inproceedings{chen_detecting_2017,
+	address = {New York, NY, USA},
+	series = {{ASIA} {CCS} '17},
+	title = {Detecting {Privileged} {Side}-{Channel} {Attacks} in {Shielded} {Execution} with {DéJà} {Vu}},
+	isbn = {978-1-4503-4944-4},
+	url = {http://doi.acm.org/10.1145/3052973.3053007},
+	doi = {10.1145/3052973.3053007},
+	abstract = {Intel Software Guard Extension (SGX) protects the confidentiality and integrity of an unprivileged program running inside a secure enclave from a privileged attacker who has full control of the entire operating system (OS). Program execution inside this enclave is therefore referred to as shielded. Unfortunately, shielded execution does not protect programs from side-channel attacks by a privileged attacker. For instance, it has been shown that by changing page table entries of memory pages used by shielded execution, a malicious OS kernel could observe memory page accesses from the execution and hence infer a wide range of sensitive information about it. In fact, this page-fault side channel is only an instance of a category of side-channel attacks, here called privileged side-channel attacks, in which privileged attackers frequently preempt the shielded execution to obtain fine-grained side-channel observations. In this paper, we present Deja Vu, a software framework that enables a shielded execution to detect such privileged side-channel attacks. Specifically, we build into shielded execution the ability to check program execution time at the granularity of paths in its control-flow graph. To provide a trustworthy source of time measurement, Deja Vu implements a novel software reference clock that is protected by Intel Transactional Synchronization Extensions (TSX), a hardware implementation of transactional memory. Evaluations show that Deja Vu effectively detects side-channel attacks against shielded execution and against the reference clock itself.},
+	booktitle = {Proceedings of the 2017 {ACM} on {Asia} {Conference} on {Computer} and {Communications} {Security}},
+	publisher = {ACM},
+	author = {Chen, Sanchuan and Zhang, Xiaokuan and Reiter, Michael K. and Zhang, Yinqian},
+	year = {2017},
+	keywords = {side-channel detection, software guard extension, transactional synchronization extensions},
+	pages = {7--18},
+	file = {ACM Full Text PDF:/home/colin/.zotero/zotero/f4prs9xk.default/zotero/storage/GNK7JRKX/Chen et al. - 2017 - Detecting Privileged Side-Channel Attacks in Shiel.pdf:application/pdf}
+}
+
+@inproceedings{xu_controlled-channel_2015,
+	title = {Controlled-{Channel} {Attacks}: {Deterministic} {Side} {Channels} for {Untrusted} {Operating} {Systems}},
+	shorttitle = {Controlled-{Channel} {Attacks}},
+	doi = {10.1109/SP.2015.45},
+	abstract = {The presence of large numbers of security vulnerabilities in popular feature-rich commodity operating systems has inspired a long line of work on excluding these operating systems from the trusted computing base of applications, while retaining many of their benefits. Legacy applications continue to run on the untrusted operating system, while a small hyper visor or trusted hardware prevents the operating system from accessing the applications' memory. In this paper, we introduce controlled-channel attacks, a new type of side-channel attack that allows an untrusted operating system to extract large amounts of sensitive information from protected applications on systems like Overshadow, Ink Tag or Haven. We implement the attacks on Haven and Ink Tag and demonstrate their power by extracting complete text documents and outlines of JPEG images from widely deployed application libraries. Given these attacks, it is unclear if Over shadow's vision of protecting unmodified legacy applications from legacy operating systems running on off-the-shelf hardware is still tenable.},
+	booktitle = {2015 {IEEE} {Symposium} on {Security} and {Privacy}},
+	author = {Xu, Y. and Cui, W. and Peinado, M.},
+	month = may,
+	year = {2015},
+	keywords = {controlled-channel attacks, Control systems, cryptography, Data mining, deterministic side channels, document handling, feature-rich commodity operating systems, Hardware, Haven, hypervisor, Ink Tag, JPEG images, legacy operating systems, Monitoring, Operating systems, operating systems (computers), Overshadow, Resource management, security vulnerabilities, SGX, side-channel attack, text documents, trusted computing, trusted hardware, untrusted operating system, untrusted operating systems, virtualization, Virtual machine monitors},
+	pages = {640--656},
+	file = {IEEE Xplore Abstract Record:/home/colin/.zotero/zotero/f4prs9xk.default/zotero/storage/AHXKFX9G/7163052.html:text/html;IEEE Xplore Full Text PDF:/home/colin/.zotero/zotero/f4prs9xk.default/zotero/storage/SAFPGUHD/Xu et al. - 2015 - Controlled-Channel Attacks Deterministic Side Cha.pdf:application/pdf}
+}
+
+@article{moghimi_cachezoom:_2017,
+	title = {{CacheZoom}: {How} {SGX} {Amplifies} {The} {Power} of {Cache} {Attacks}},
+	shorttitle = {{CacheZoom}},
+	url = {http://arxiv.org/abs/1703.06986},
+	abstract = {Intel SGX is a hardware extension proposed to provide a Trusted Execution Environment on commodity processors. SGX disregards microarchitectural side-channels as out of scope of its threat model. In this paper, we propose a high-resolution cache side-channel attack and demonstrate its impact and its capability in overcoming the security goals of SGX technology. Our tool tracks virtually all memory accesses of SGX enclaves with high spatial and temporal precision. The resulting attack succeeds on implementations that were previously believed to be resistant to realistic cache attacks. We demonstrate that these new attacks can recover AES keys from an enclave with as few as ten measurements.},
+	journal = {arXiv:1703.06986 [cs]},
+	author = {Moghimi, Ahmad and Irazoqui, Gorka and Eisenbarth, Thomas},
+	month = mar,
+	year = {2017},
+	note = {arXiv: 1703.06986},
+	keywords = {Computer Science - Cryptography and Security},
+	file = {arXiv\:1703.06986 PDF:/home/colin/.zotero/zotero/f4prs9xk.default/zotero/storage/26ND78KZ/Moghimi et al. - 2017 - CacheZoom How SGX Amplifies The Power of Cache At.pdf:application/pdf;arXiv.org Snapshot:/home/colin/.zotero/zotero/f4prs9xk.default/zotero/storage/Q9PB2QM6/1703.html:text/html}
+}
+
+@inproceedings{gotzfried_cache_2017,
+	title = {Cache {Attacks} on {Intel} {SGX}},
+	isbn = {978-1-4503-4935-2},
+	url = {http://dl.acm.org/citation.cfm?doid=3065913.3065915},
+	doi = {10.1145/3065913.3065915},
+	language = {en},
+	urldate = {2017-05-30},
+	publisher = {ACM Press},
+	author = {Götzfried, Johannes and Eckert, Moritz and Schinzel, Sebastian and Müller, Tilo},
+	year = {2017},
+	pages = {1--6},
+	file = {sgx-timing.pdf:/home/colin/.zotero/zotero/f4prs9xk.default/zotero/storage/HBMW57WK/sgx-timing.pdf:application/pdf}
+}
+
+@inproceedings{seo_sgx-shield:_2017,
+	title = {{SGX}-{Shield}: {Enabling} address space layout randomization for {SGX} programs},
+	shorttitle = {{SGX}-{Shield}},
+	url = {http://cps.kaist.ac.kr/papers/ndss17-sgxshield.pdf},
+	urldate = {2017-06-02},
+	booktitle = {Proceedings of the 2017 {Annual} {Network} and {Distributed} {System} {Security} {Symposium} ({NDSS}), {San} {Diego}, {CA}},
+	author = {Seo, Jaebaek and Lee, Byounyoung and Kim, Seongmin and Shih, Ming-Wei and Shin, Insik and Han, Dongsu and Kim, Taesoo},
+	year = {2017},
+	file = {ndss17-sgxshield.pdf:/home/colin/.zotero/zotero/f4prs9xk.default/zotero/storage/BEDHPJAW/ndss17-sgxshield.pdf:application/pdf}
+}

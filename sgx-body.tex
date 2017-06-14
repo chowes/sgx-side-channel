@@ -1,12 +1,22 @@
-\section{Introduction}
+\section{Intel SGX}
+
+Intel Software Guard Extensions (SGX) is a set of hardware extensions designed to allow legacy programs to run securely in an environment where all software on a remote host machine is potentially untrusted. SGX was designed to address the problem of \emph{secure remote computation}, that is, secure execution of software on a remote system controlled by an untrusted party. Under this threat model, \emph{all} software on a remote system is potentially malicious, including the operating system and hypervisor. SGX was therefore designed to provide a method for secure computation while protecting user-level software executing on behalf of a remote user from malicious software running at higher privilege levels. This is acheived through a set of CPU instructions that sequester a user-level process into a secure \emph{enclave} running in processor reserved memory. 
 
 \section{Software Side-Channel Attacks}
 
-\section{Intel SGX}
+Side-channel attacks are a class of attacks that leverage information about the physical properties of a system in order to infer secrets protect by the system. Some side-channel attacks require physical access to a machine, and are both difficult and expensive to employ. However, software side-channel attacks leverage physical information gained about a system acquired exclusively through software.
+
+Cache timing attacks are used to infer memory access information by exploiting timing differences.
+
+Page fault attacks can be employed by a malicious operating system to determine when a program is accessing specific pages.
 
 \section{Attacks Against SGX Enclaves}
 
+Both cache timing attacks and page fault attacks have been demonstrated against SGX enclaves in proof-of-concept attacks. 
+
 \section{Countermeasures}
+
+A number of countermeasures have been proposed, both for future development of secure hardware, and additional security measures that can be employed by security conscious developers working with the current implementation of SGX.
 
 \section{Future Directions}
 

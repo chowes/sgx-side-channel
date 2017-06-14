@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.9)  3 JUN 2017 09:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.9)  14 JUN 2017 16:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -698,40 +698,57 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-) (./sgx-body.tex)
-No file sgx-side-channel.bbl.
-[1.1{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}
+) (./sgx-body.tex) (./sgx-side-channel.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 44--51
+[]\OT1/cmr/m/n/7 (+20) Victor Costan and Srini-vas De-vadas. 2016.  In-tel
+ []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--51
+\OT1/cmr/m/n/7 (+20) SGX Ex-plained.  \OT1/cmr/m/it/7 (+20) IACR Cryp-tol-ogy e
+Print Archive
+ []
+
+
+Underfull \hbox (badness 6775) in paragraph at lines 44--51
+\OT1/cmr/m/n/7 (+20) 2016 (2016), 86.  []$https : / / pdfs . semanticscholar . 
+org / 2d7f /
+ []
+
+) [1.1{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 42.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 42.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 44.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 44.
 
 (./sgx-side-channel.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 42.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 42.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 44.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 44.
 Package rerunfilecheck Info: File `sgx-side-channel.out' has not changed.
-(rerunfilecheck)             Checksum: 866C70F84F7E1DAB2C2E7D8D1C043132;1102.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 42.
+(rerunfilecheck)             Checksum: 2DF69BA2BC53D34DDE16035F65AEFE0B;1080.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 44.
  ) 
 Here is how much of TeX's memory you used:
- 14951 strings out of 494946
- 217323 string characters out of 6180982
- 349752 words of memory out of 5000000
- 17872 multiletter control sequences out of 15000+600000
- 8707 words of font info for 39 fonts, out of 8000000 for 9000
+ 15011 strings out of 494946
+ 217966 string characters out of 6180982
+ 354807 words of memory out of 5000000
+ 17893 multiletter control sequences out of 15000+600000
+ 10567 words of font info for 57 fonts, out of 8000000 for 9000
  175 hyphenation exceptions out of 8191
- 60i,11n,94p,326b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,11n,94p,952b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmssbx10.pfb>
-Output written on sgx-side-channel.pdf (1 page, 80549 bytes).
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmti7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmti9.pfb>
+Output written on sgx-side-channel.pdf (1 page, 125046 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
- 62 compressed objects within 1 object stream
- 10 named destinations out of 1000 (max. 500000)
- 11333 words of extra memory for PDF output out of 12000 (max. 10000000)
+ 97 PDF objects out of 1000 (max. 8388607)
+ 74 compressed objects within 1 object stream
+ 11 named destinations out of 1000 (max. 500000)
+ 15429 words of extra memory for PDF output out of 17280 (max. 10000000)
 
