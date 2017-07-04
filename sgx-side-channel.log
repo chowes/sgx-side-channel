@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.9)  14 JUN 2017 16:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.9)  4 JUL 2017 18:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -414,10 +414,10 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@ACM@badge@width=\skip56
 \@ACM@title@width=\skip57
 \@ACM@badge@skip=\skip58
-Class acmart Info: Printing CCS on input line 1197.
-Class acmart Info: Printing bibformat on input line 1197.
-Class acmart Info: Suppressing folios on input line 1204.
-Class acmart Info: Setting authorsperrow to 0 on input line 1207.
+Class acmart Info: Printing CCS on input line 1196.
+Class acmart Info: Printing bibformat on input line 1196.
+Class acmart Info: Suppressing folios on input line 1203.
+Class acmart Info: Setting authorsperrow to 0 on input line 1206.
 
 (/usr/share/texlive/texmf-dist/tex/latex/comment/comment.sty
 \CommentStream=\write4
@@ -698,57 +698,69 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-) (./sgx-body.tex) (./sgx-side-channel.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 44--51
+) (./sgx-body.tex
+Underfull \vbox (badness 7468) has occurred while \output is active []
+
+ [1.1{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}
+
+])
+(./sgx-side-channel.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 55--62
 []\OT1/cmr/m/n/7 (+20) Victor Costan and Srini-vas De-vadas. 2016.  In-tel
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--51
+Underfull \hbox (badness 10000) in paragraph at lines 55--62
 \OT1/cmr/m/n/7 (+20) SGX Ex-plained.  \OT1/cmr/m/it/7 (+20) IACR Cryp-tol-ogy e
 Print Archive
  []
 
 
-Underfull \hbox (badness 6775) in paragraph at lines 44--51
+Underfull \hbox (badness 6775) in paragraph at lines 55--62
 \OT1/cmr/m/n/7 (+20) 2016 (2016), 86.  []$https : / / pdfs . semanticscholar . 
 org / 2d7f /
  []
 
-) [1.1{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}
+Missing character: There is no Ã in font cmr7!
+Missing character: There is no ¶ in font cmr7!
+Missing character: There is no Ã in font cmr7!
+Missing character: There is no ¼ in font cmr7!
+Missing character: There is no Ã in font cmr7!
+Missing character: There is no © in font cmr7!
+) [2.2
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 44.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 44.
-
-(./sgx-side-channel.aux)
+ (./sgx-side-channel.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 44.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 44.
 Package rerunfilecheck Info: File `sgx-side-channel.out' has not changed.
-(rerunfilecheck)             Checksum: 2DF69BA2BC53D34DDE16035F65AEFE0B;1080.
+(rerunfilecheck)             Checksum: DB6F4673B73DF211CC7E34EDB4D31C39;1223.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 44.
  ) 
 Here is how much of TeX's memory you used:
- 15011 strings out of 494946
- 217966 string characters out of 6180982
- 354807 words of memory out of 5000000
- 17893 multiletter control sequences out of 15000+600000
- 10567 words of font info for 57 fonts, out of 8000000 for 9000
+ 15082 strings out of 494946
+ 218998 string characters out of 6180982
+ 358151 words of memory out of 5000000
+ 17915 multiletter control sequences out of 15000+600000
+ 12000 words of font info for 78 fonts, out of 8000000 for 9000
  175 hyphenation exceptions out of 8191
- 60i,11n,94p,952b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,11n,94p,1122b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmti7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmti9.pfb>
-Output written on sgx-side-channel.pdf (1 page, 125046 bytes).
+e1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmti7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmti9.pfb>
+Output written on sgx-side-channel.pdf (2 pages, 155645 bytes).
 PDF statistics:
- 97 PDF objects out of 1000 (max. 8388607)
- 74 compressed objects within 1 object stream
- 11 named destinations out of 1000 (max. 500000)
- 15429 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 135 PDF objects out of 1000 (max. 8388607)
+ 108 compressed objects within 2 object streams
+ 18 named destinations out of 1000 (max. 500000)
+ 17485 words of extra memory for PDF output out of 20736 (max. 10000000)
 

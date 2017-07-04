@@ -37,6 +37,17 @@
 \providecommand\natexlab[1]{#1}
 \providecommand\showeprint[2][]{arXiv:#2}
 
+\bibitem[\protect\citeauthoryear{Corporation}{Corporation}{2016}]%
+        {intel_corporation_intel_2016}
+\bibfield{author}{\bibinfo{person}{Intel Corporation}.}
+  \bibinfo{year}{2016}\natexlab{}.
+\newblock \bibinfo{title}{Intel {Software} {Guard} {Extensions}}.
+\newblock   (\bibinfo{year}{2016}).
+\newblock
+\showURL{%
+\url{https://software.intel.com/en-us/sgx}}
+
+
 \bibitem[\protect\citeauthoryear{Costan and Devadas}{Costan and
   Devadas}{2016}]%
         {costan_intel_2016}
@@ -48,6 +59,69 @@
 \newblock
 \showURL{%
 \url{https://pdfs.semanticscholar.org/2d7f/3f4ca3fbb15ae04533456e5031e0d0dc845a.pdf}}
+
+
+\bibitem[\protect\citeauthoryear{Götzfried, Eckert, Schinzel, and
+  Müller}{Götzfried et~al\mbox{.}}{2017}]%
+        {gotzfried_cache_2017}
+\bibfield{author}{\bibinfo{person}{Johannes Götzfried},
+  \bibinfo{person}{Moritz Eckert}, \bibinfo{person}{Sebastian Schinzel}, {and}
+  \bibinfo{person}{Tilo Müller}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Cache {Attacks} on {Intel} {SGX}}.
+  \bibinfo{publisher}{ACM Press}, \bibinfo{pages}{1--6}.
+\newblock
+\showISBNx{978-1-4503-4935-2}
+\showDOI{%
+\url{https://doi.org/10.1145/3065913.3065915}}
+
+
+\bibitem[\protect\citeauthoryear{Schwarz, Weiser, Gruss, Maurice, and
+  Mangard}{Schwarz et~al\mbox{.}}{2017}]%
+        {schwarz_malware_2017}
+\bibfield{author}{\bibinfo{person}{Michael Schwarz}, \bibinfo{person}{Samuel
+  Weiser}, \bibinfo{person}{Daniel Gruss}, \bibinfo{person}{Clémentine
+  Maurice}, {and} \bibinfo{person}{Stefan Mangard}.}
+  \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Malware {Guard} {Extension}: {Using} {SGX} to
+  {Conceal} {Cache} {Attacks}}.
+\newblock \bibinfo{journal}{{\em arXiv:1702.08719 [cs]\/}}
+  (\bibinfo{date}{Feb.} \bibinfo{year}{2017}).
+\newblock
+\showURL{%
+\url{http://arxiv.org/abs/1702.08719}}
+\newblock
+\shownote{arXiv: 1702.08719.}
+
+
+\bibitem[\protect\citeauthoryear{Shinde, Chua, Narayanan, and Saxena}{Shinde
+  et~al\mbox{.}}{2015}]%
+        {shinde_preventing_2015}
+\bibfield{author}{\bibinfo{person}{Shweta Shinde}, \bibinfo{person}{Zheng~Leong
+  Chua}, \bibinfo{person}{Viswesh Narayanan}, {and} \bibinfo{person}{Prateek
+  Saxena}.} \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{Preventing {Your} {Faults} {From} {Telling} {Your}
+  {Secrets}: {Defenses} {Against} {Pigeonhole} {Attacks}}.
+\newblock \bibinfo{journal}{{\em arXiv:1506.04832 [cs]\/}}
+  (\bibinfo{date}{June} \bibinfo{year}{2015}).
+\newblock
+\showURL{%
+\url{http://arxiv.org/abs/1506.04832}}
+\newblock
+\shownote{arXiv: 1506.04832.}
+
+
+\bibitem[\protect\citeauthoryear{Xu, Cui, and Peinado}{Xu
+  et~al\mbox{.}}{2015}]%
+        {xu_controlled-channel_2015}
+\bibfield{author}{\bibinfo{person}{Y. Xu}, \bibinfo{person}{W. Cui}, {and}
+  \bibinfo{person}{M. Peinado}.} \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{Controlled-{Channel} {Attacks}: {Deterministic}
+  {Side} {Channels} for {Untrusted} {Operating} {Systems}}. In
+  \bibinfo{booktitle}{{\em 2015 {IEEE} {Symposium} on {Security} and
+  {Privacy}}}. \bibinfo{pages}{640--656}.
+\newblock
+\showDOI{%
+\url{https://doi.org/10.1109/SP.2015.45}}
 
 
 \end{thebibliography}

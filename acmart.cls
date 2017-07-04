@@ -1017,8 +1017,7 @@ Computing Machinery]
   \ifx\acmConference@shortname\@empty
     \gdef\acmConference@shortname{#2}%
   \fi}
-\acmConference[Conference'17]{ACM Conference}{July 2017}{Washington,
-  DC, USA}
+\acmConference[CS 658]{University of Waterloo}{July 2017}{University of Waterloo}
 \def\subtitle#1{\def\@subtitle{#1}}
 \subtitle{}
 \newcount\num@authorgroups
