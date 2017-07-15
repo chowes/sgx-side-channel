@@ -20,4 +20,5 @@
 *.mtc
 *.mtc1
 *.out
+*.bak
 *.synctex.gz
