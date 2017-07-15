@@ -1448,6 +1448,7 @@ Computing Machinery]
   \@mktitle\if@ACM@sigchiamode\else\@mkauthors\fi\@mkteasers
   \@printtopmatter
   \if@ACM@sigchiamode\@mkauthors\fi
+  \vspace{10mm}
   \setcounter{footnote}{0}%
   \def\@makefnmark{\hbox{\@textsuperscript{\normalfont\@thefnmark}}}%
   \@titlenotes
