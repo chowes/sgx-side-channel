@@ -34,7 +34,9 @@ Moreover, a remote attacker can take advantage of the protections offered by SGX
 
 \subsection{Page Fault Attacks}
 
-Similar to cache timing attacks, page fault attacks allow an attacker to derive secrets from a victim program based on memory access patterns. Page fault attacks rely on an attacker having control over memory management, as is the case when an attacker controls a malicious OS on which a victim is executing code in an SGX enclave \cite{intel_corporation_tutorial_2015}. In order to carry out an attack, the attacker first analyzes the victim's code in order to identify input-dependent data accesses and input-dependent control transfers. When the application is run, the attacker restricts access to a set of the victim's pages, causing a page fault to be triggered whenever the victim attempts to access an address on a target page. The attacker can record sequences of target page accesses, and can use this information to run an offline analysis and make inferences about the victim's secrets \cite{xu_controlled-channel_2015, shinde_preventing_2015}.
+Similar to cache timing attacks, controlled-channel page fault attacks allow an attacker to derive secrets from a victim program based on memory access patterns. Page fault attacks rely on an attacker having control over memory management, as is the case when an attacker controls a malicious OS on which a victim is executing code in an SGX enclave \cite{intel_corporation_tutorial_2015}. In order to carry out an attack, the attacker must first analyze the victim's source code or a binary in order to identify input-dependent data accesses and input-dependent control transfers. When the application is run, the attacker can restrict access to a set of the victim's pages, causing a page fault to be triggered whenever the victim attempts to access an address on a target page. Since the CPU must report at least the base address of the faulting page to the OS, the attacker can record sequences of page accesses and can use this information to run an offline analysis and make inferences about the victim's secret data at page level (4 KB) granularity \cite{xu_controlled-channel_2015, shinde_preventing_2015}.
+
+Controlled-channel page fault attacks are feasible against SGX enclaves, since a privileged attacker has control over memory management, and SGX aims to support legacy appliations without requiring that they be modified to conceal private data from an attacker that can observe memory access patterns \cite{xu_controlled-channel_2015}. Moreover, a malicious OS can exert fine-grained control over page allocation to carry out a ``pidgeonhole'' attack against an SGX enclave. Here, the OS allocates only 3 pages to the victim enclave - a code page, a source page, and a destination page - which make up the ``pidgeonhole set''. Any memory accesses that fall outside of these pages will cause a page fault, revealing to the OS which data or code the application is attempting to access. The OS can therefore maximize the information leaked to the attacker via the page fault channel. This technique has been demonstrated against SGX enclaves running implementations of OpenSSL and Libgcrypt \cite{shinde_preventing_2015}.
 
 \subsection{Branch Prediction Analysis}
 
@@ -42,21 +44,21 @@ Modern processors use instruction \emph{pipelining} to fetch and decode instruct
 
 An attacker can leverage this behavior to infer information about a victim process through a branch shadowing attack. Briefly, an attacker uses knowledge of a program's structure to construct a ``shadow'' program, which has branches at the same points in execution as the victim. The attacker can then interrupt the victim process after a branch is encountered and run the shadow program starting at the address of the branch most recently encountered in the victim program. The attacker can then use timing differences or performance monitoring tools to determine whether the branch predictions made by the processor based on the behavior of the victim led to correct or incorrect predictions of the shadow program's behavior, and can infer information about the victim's execution patterns \cite{lee_inferring_2017}.
 
-SGX does not clear an enclave's branch history when performing an enclave exit, and a privileged attacker can take advantage of this by forcing frequent interrupts such that all branches taken by the victim can be determined by the attacker. In order to reduce the noise inherent in attempting to time differences in performance between correct and incorrect branch predictions in the shadow program, an attacker can make use of the Last Branch Record (LBR), a CPU debugging feature that records the last branch taken and whether the CPU's prediction was correct. This feature is only available in debugging mode, so the attacker must set the shadow program to run in debugging mode and check whether the predictions based on the behavior of the victim led to correct choices in the shadow program. The attacker can therefore use this privileged debugging mechanism to determine precisely which branches were taken by the victim and infer information about the input to the victim program. Proof of concept attacks have demonstrated that this technique can reveal information about input and program behavior protected in SGX enclaves that cannot be detected by the controlled channel page fault attacks described above \cite{lee_inferring_2017}. 
+SGX does not clear an enclave's branch history when performing an enclave exit, and a privileged attacker can take advantage of this by forcing frequent interrupts such that all branches taken by the victim can be determined by the attacker. In order to reduce the noise inherent in attempting to time differences in performance between correct and incorrect branch predictions in the shadow program, an attacker can make use of the Last Branch Record (LBR), a CPU debugging feature that records the last branch taken and whether the CPU's prediction was correct. This feature is only available in debugging mode, so the attacker must set the shadow program to run in debugging mode and check whether the predictions based on the behavior of the victim led to correct choices in the shadow program. The attacker can therefore use this privileged debugging mechanism to determine precisely which branches were taken by the victim and infer information about the input to the victim program. Proof of concept attacks have demonstrated that this technique can reveal information about input and program behavior protected in SGX enclaves that cannot be detected by the controlled channel page fault attacks described above \cite{lee_inferring_2017, shinde_preventing_2015}. 
 
 \section{Countermeasures}
 
 A number of countermeasures have been proposed, both for future development of secure hardware, and additional security measures that can be employed by security conscious developers working with the current implementation of SGX.
+
+\subsection{Compiler Techniques}
+
+% zigzagger, pidgeonhole
 
 \subsection{T-SGX}
 
 \subsection{SGX-Shield}
 
 \subsection{ORAM}
-
-\subsection{Compiler Techniques}
-
-% zigzagger, pidgeonhole
 
 \subsection{Sanctum}
 
