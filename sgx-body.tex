@@ -80,7 +80,7 @@ Sanctum is a hardware-based extension to the Rocket RISC-V core design providing
 
 Sanctum's security monitor is able provide stronger protection against cache-timing attacks to enclave programs than SGX by directing interrupts to the security monitor rather than directly to the untrusted OS. The security monitor flushes the TLB and per-core caches before initiating an enclave exit and allowing the OS to handle an interrupt or fault, thus preventing a malicious OS from carrying out cache-timing attacks against per-core caches. In addition, the security monitor shifts the physical address of enclave data before it is stored in the shared LLC, so a malicious OS wishing to carry out a cache-timing attack against the shared LLC has no way of determining which cache set stores its target memory address \cite{costan_sanctum:_2016, costan_sanctum:_2015}.
 
-In addtion, Sanctum provides protection against page-fault attacks by dispatching faults to each enclave's fault handler. 
+In addition, Sanctum provides protection against page-fault attacks by dispatching faults to each enclave's fault handler. 
 
 \subsubsection{Hardware Protections against Branch Shadowing}
 
@@ -88,7 +88,7 @@ Despite its guarantees of isolation and protection against privileged attackers,
 
 \section{Future Directions}
 
-Since the SGX threat model affords an attacker with wide attack surface, future research should continue to search for channels through which sensitive information can be infered from an enclave by an attacker with control over a malicious OS or hypervisor. In addition, most countermeasures have focused on mitigating attacks carried out by a privileged attacker with little emphasis on the danger of a malicious user-level enclave using the protections provided by SGX to disguise attacks against other software running on the same host. Finally, future work should continue to search for countermeasures that can either be included in future iterations of SGX and its competitors, or integrated into SGX enclaves in order to prevent or mitigate software side-channel attacks.
+Since the SGX threat model affords an attacker with wide attack surface, future research should continue to search for channels through which sensitive information can be inferred from an enclave by an attacker with control over a malicious OS or hypervisor. In addition, most countermeasures have focused on mitigating attacks carried out by a privileged attacker with little emphasis on the danger of a malicious user-level enclave using the protections provided by SGX to disguise attacks against other software running on the same host. Finally, future work should continue to search for countermeasures that can either be included in future iterations of SGX and its competitors, or integrated into SGX enclaves in order to prevent or mitigate software side-channel attacks.
 
 \section{Conclusions}
 
