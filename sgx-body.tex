@@ -93,3 +93,5 @@ Since the SGX threat model affords an attacker with wide attack surface, future 
 \section{Conclusions}
 
 Intel SGX enclaves are vulnerable to a number of software side-channels that can be implemented cheaply and easily by an attacker with remote or local access to the host machine. Privileged attackers can take advantage of control over scheduling and memory management, as well as powerful performance monitoring tools, while unprivileged attackers can use the protections afforded by SGX enclaves to disguise attacks directed at other enclaves running on the same host. 
+
+A number of software- and compiler-based prevention mechanisms have been proposed, but these techniques involve added overhead and complexity, and none of the techniques discussed here provide full protection against all identified side-channel vulnerabilities. The Sanctum hardware extensions follow the same design principles as SGX and make the same guarantees, but also provides stronger isolation for enclaves and added protection against software side-channel attacks. 
